@@ -1,0 +1,3 @@
+[submodule "wp-content/themes/sparc-theme"]
+	path = wp-content/themes/sparc-theme
+	url = https://github.com/davidh-ssec/sparc-theme

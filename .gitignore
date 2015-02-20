@@ -7,6 +7,7 @@
 !README.md
 !LICENSE
 !update_repos.sh
+!update_web_root.sh
 
 # ignore everything in the wp-content directory
 wp-content/*

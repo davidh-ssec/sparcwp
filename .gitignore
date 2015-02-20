@@ -1,13 +1,21 @@
+# ignore everything in root
+/*
+# except the content directory
+!wp-content/
+
+# ignore everything in the wp-content directory
+wp-content/*
+# except these
+!wp-content/mu-plugins/
+!wp-content/plugins/
+!wp-content/themes/
+
+# ignore all the builtin themes
+wp-content/themes/twenty*
+
+# ignore these files
 *.log
+.*
 .htaccess
 sitemap.xml
 sitemap.xml.gz
-wp-config.php
-wp-content/advanced-cache.php
-wp-content/backup-db/
-wp-content/backups/
-wp-content/blogs.dir/
-wp-content/cache/
-wp-content/upgrade/
-wp-content/uploads/
-wp-content/wp-cache-config.php

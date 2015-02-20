@@ -5,7 +5,6 @@
 !.gitignore
 !.gitmodules
 !README.md
-!license.txt
 !LICENSE
 
 # ignore everything in the wp-content directory

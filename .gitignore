@@ -2,6 +2,8 @@
 /*
 # except the content directory
 !wp-content/
+!.gitignore
+!.gitmodules
 !README.md
 !license.txt
 !LICENSE
@@ -10,11 +12,17 @@
 wp-content/*
 # except these
 !wp-content/mu-plugins/
-!wp-content/plugins/
-!wp-content/themes/
-
+!wp-content/themes/sparc-theme
 # ignore all the builtin themes
 wp-content/themes/twenty*
+
+# ignore all plugins
+wp-content/plugins/*
+# except these
+!wp-content/plugins/active-directory-integration
+!wp-content/plugins/akismet
+!wp-content/plugins/raw-html
+!wp-content/plugins/timber-library
 
 # ignore these files
 *.log

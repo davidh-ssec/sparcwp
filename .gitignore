@@ -2,6 +2,9 @@
 /*
 # except the content directory
 !wp-content/
+!README.md
+!license.txt
+!LICENSE
 
 # ignore everything in the wp-content directory
 wp-content/*
@@ -16,6 +19,3 @@ wp-content/themes/twenty*
 # ignore these files
 *.log
 .*
-.htaccess
-sitemap.xml
-sitemap.xml.gz

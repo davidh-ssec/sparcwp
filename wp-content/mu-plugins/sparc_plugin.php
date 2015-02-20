@@ -93,7 +93,7 @@ function my_remove_normal_posts() {
     }
 }
 
-
+// Create connection between field posts and experiments (requires posts-to-posts plugin)
 function my_connection_types() {
     p2p_register_connection_type( array(
         'name' => 'field_post_to_experiment',

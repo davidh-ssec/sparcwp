@@ -6,6 +6,7 @@
 !.gitmodules
 !README.md
 !LICENSE
+!update_repos.sh
 
 # ignore everything in the wp-content directory
 wp-content/*
@@ -15,11 +16,14 @@ wp-content/*
 # ignore all the builtin themes
 wp-content/themes/twenty*
 
+!wp-content/plugins
 # ignore all plugins
 wp-content/plugins/*
 # except these
 !wp-content/plugins/active-directory-integration
-!wp-content/plugins/akismet
+!wp-content/plugins/advanced-custom-fields
+#!wp-content/plugins/akismet
+!wp-content/plugins/posts-to-posts
 !wp-content/plugins/raw-html
 !wp-content/plugins/timber-library
 

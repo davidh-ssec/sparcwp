@@ -43,14 +43,14 @@ for plugin_dir in "${PLUGIN_SUBDIR}/active-directory-integration" \
     # Copy from web install to repository
     #cp -r $INSTALLED_DIR $REPOS_DIR || (echo "Could not copy plugin to repository"; exit 1)
 
-    rsync -av --delete-after --progress --exclude=.git $INSTALLED_DIR $REPOS_DIR
+    rsync -aqv --delete-after --exclude=.git $INSTALLED_DIR $SCRIPT_DIR/wp-content/plugins/
 done
 
 echo "Updating 'must use' plugins..."
 #rm -r $SCRIPT_DIR/wp-content/mu-plugins
 #cp -r $ROOT_DIR/wp-content/mu-plugins $SCRIPT_DIR/wp-content/
-rsync -av --delete-after --progress --exclude=.git $ROOT_DIR/wp-content/mu-plugins $SCRIPT_DIR/wp-content/
+rsync -aqv --delete-after --exclude=.git $ROOT_DIR/wp-content/mu-plugins $SCRIPT_DIR/wp-content/
 
 echo "Updating sparc-theme..."
-rsync -av --delete-after --progress --exclude=.git $ROOT_DIR/wp-content/themes $SCRIPT_DIR/wp-content/
+rsync -aqv --delete-after --exclude=.git $ROOT_DIR/wp-content/themes $SCRIPT_DIR/wp-content/
 

@@ -32,5 +32,5 @@ echo "Updating 'must use' plugins..."
 ${CMD_PREFIX}rsync -aqv --delete-after --exclude=.git $SCRIPT_DIR/wp-content/mu-plugins $ROOT_DIR/wp-content/
 
 echo "Updating sparc-theme..."
-${CMD_PREFIX}rsync -aqv --delete-after --exclude=.git $SCRIPT_DIR/wp-content/themes/sparc-theme $ROOT_DIR/wp-content/
+${CMD_PREFIX}rsync -aqv --delete-after --exclude=.git $SCRIPT_DIR/wp-content/themes/sparc-theme $ROOT_DIR/wp-content/themes/
 
